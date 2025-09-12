@@ -1,0 +1,24 @@
+{
+
+    // don't refresh server on file changes in Ableton/Mat/Max Folder
+
+  // Only affect Live Server
+  "liveServer.settings.ignoreFiles": [
+    "**/Ableton_Set/**",
+    "**/Max/**",
+
+    // (nice-to-have) ignore typical file types from those apps
+    "**/*.als",
+    "**/*.asd",
+    "**/*.maxpat",
+    "**/*.maxhelp",
+    "**/*.maxproj"
+  ],
+
+  // (optional) also stop VS Code’s own watcher from tracking them
+  "files.watcherExclude": {
+    "**/Ableton_Set/**": true,
+    "**/Mat/**": true,
+    "**/Max/**": true
+  }
+}
